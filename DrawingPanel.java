@@ -3,33 +3,18 @@
  * Date: 4/20/20
  * Assignment 1 ITC 155
  */
-
-public class Assignment1 
-{
-	public static void main(String[] args) 
-	{
-		//Creates a yellow panel
-		DrawingPanel panel = new DrawingPanel(280, 200);
-		panel.setBackground(Color.YELLOW);
-		
-		//Allows ability to draw shapes
-		Graphics g = panel.getGraphics();
-
-		//Blue circle left
-		g.setColor(Color.BLUE);
-		g.fillOval(60, 45, 50, 50);
-		
-		//Blue circle right
-		g.setColor(Color.BLUE);
-		g.fillOval(160, 45, 50, 50);
-		
-		//Red square
-		g.setColor(Color.RED);
-		g.fillRect(85, 70, 100, 100);
-
-		//Line in the middle of square 
-		g.setColor(Color.BLACK);
-		g.drawLine(85, 125, 185, 125);
-	}
-
+public class MickeyBox {
+    public static void main(String[] args) {
+        DrawingPanel panel = new DrawingPanel(220, 150);
+        Graphics g = panel.getGraphics();
+        g.setColor(Color.YELLOW);
+        g.fillRect(0, 0, 220, 150);
+        g.setColor(Color.BLUE);
+        g.fillOval(50, 25, 40, 40);
+        g.fillOval(130, 25, 40, 40);
+        g.setColor(Color.RED);
+        g.fillRect(70, 45, 80, 80);
+        g.setColor(Color.BLACK);
+        g.drawLine(70, 85, 150, 85);
+    }
 }

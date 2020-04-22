@@ -1,20 +1,24 @@
-/*
-* Write the class Marketer to accompany the other law firm classes described in this chapter. 
-* Marketers make $50,000 ($10,000 more than general employees) and have an additional method 
-* called advertise that prints "Act now, while supplies last!" Make sure to interact with 
-* the Employee superclass as appropriate. 
-*/
+public class Exercise_13_11 {
+	/** Method method */
+	public static void main(String[] args) throws CloneNotSupportedException {
+		// Create an Octagon object
+		Octagon octagon1 = new Octagon(5);
 
-public class Marketer extends Employee {
-    public Marketer () {
-        super();
-    }
-    
-    public double getSalary() {
-        return super.getSalary() + 10000;
-    }
-    
-    public void advertise() {
-        System.out.println("Act now, while supplies last!");
-    }
+		// Display area and perimeter of object
+		System.out.println("\nOctagon:\nArea: " + octagon1.getArea() + 
+			"\nPerimeter: " + octagon1.getPerimeter());
+
+		// Create new object using the clone method
+		System.out.println("Cloning Octagon...");
+		Octagon octagon2 = (Octagon)octagon1.clone();
+
+		// Compare the two object using compareTo method
+		int result = (octagon1.compareTo(octagon2));
+		if (result == 1)
+			System.out.println("Octagon is greather than its clone.");
+		else if (result == -1)
+			System.out.println("Octagon is less than its clone."); 
+		else
+			System.out.println("Octagon is equal to its clone.");
+	}
 }

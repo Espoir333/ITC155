@@ -1,3 +1,22 @@
+import java.util.List;
+import java.lang.Comparable;
+/**
+ * The Selection Sort algorithm uses an incremental approach.
+ *
+ * Characteristics:
+ *     Running time: Quadratic - BigOh(n^2)
+ *     Regardless of the input, it will always be quadratic. However, the Selection
+ *     Sort algorithm perform less memory swaps than Insertion Sort.
+ *
+ * Loop Invariant:
+ *     The inner loop will find the index (min) of the minimum i-th value. Therefore,
+ *     by the end of each loop, the range [0...i-1] is sorted
+ *
+ * Reference:
+ *     CLRS 3rd Edition - Problem 2.2-2
+ */
+
+
 public class SelectionSort<T extends Comparable<T>> implements SortingAlg<T> {
 
     @Override

@@ -12,11 +12,11 @@ public class StudentGrades {
 
 		HashMap<String, Double> studentGrades = new HashMap<String, Double>();
 		// Students' grades (pre-entered)
-		studentGrades.put("Harry Rawlins", 84.3);
-		studentGrades.put("Stephanie Kong", 91.0);
-		studentGrades.put("Shailen Tennyson", 78.6);
-		studentGrades.put("Quincy Wraight", 65.4);
-		studentGrades.put("Janine Antinori", 98.2);
+		studentGrades.put("David Kasunda", 85.4);
+		studentGrades.put("Christian Bushiri", 94.3);
+		studentGrades.put("Mariette Lukombo", 79.7);
+		studentGrades.put("Arris Matonge", 69.3);
+		studentGrades.put("Jeremie Lubila", 97.5);
 
 		if (studentGrades.containsKey(studentName)) {
 			HashMap<String, Double> newStudentGrades = new HashMap<String, Double>();

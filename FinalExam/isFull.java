@@ -22,7 +22,7 @@ full tree 	not a full tree
      +---+     +---+
     /     \         \
 +---+     +---+     +---+
-| 9 |     | 2 |     | 8 |
+| 9 |     | 2 |     | 8 | 
 +---+     +---+     +---+
 By definition, the empty tree is considered full.
 Assume that you are adding this method to the IntTree class as defined below:

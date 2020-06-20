@@ -48,4 +48,4 @@ public boolean _isFull(IntTreeNode node) {
 	return _isFull(node.left) && _isFull(node.right);
     } 
     return false;
-}
+} 
